@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  line-height: 140%;
+}
+*::-moz-selection {
+  background-color: #721d37;
+  color: #fff;
+  opacity: 1;
+}
+*::selection {
+  background-color: #721d37;
+  color: #fff;
+  opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+.rezume {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.rezume .separator {
+  height: 1.07vw;
+}
+.rezume .border-left {
+  border-left: 0.14vw solid #721d37;
+}
+
+.header {
+  color: #ffffff;
+}
+.header *::-moz-selection {
+  background-color: #ffffff;
+  color: #721d37;
+}
+.header *::selection {
+  background-color: #ffffff;
+  color: #721d37;
+}
+.header__inner {
+  background-color: #721d37;
+  padding: 2.14vw;
+}
+.header__inner h1 {
+  font-size: 3.86vw;
+  line-height: 100%;
+}
+.header__inner h2 {
+  display: inline-block;
+  padding: 0 0 0.14vw 0;
+  font-size: 2.86vw;
+  border-bottom: 0.14vw solid #ffffff;
+}
+.header__inner > div {
+  margin-top: 1.43vw;
+  font-size: 1vw;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+.grid {
+  margin-top: 2.86vw;
+  display: grid;
+  grid-template: 1fr/minmax(30%, auto) minmax(70%, auto);
+  color: #721d37;
+  padding: 2.14vw;
+}
+.grid h3 {
+  font-weight: 700;
+  font-size: 2.29vw;
+  border-bottom: 0.14vw solid #721d37;
+}
+.grid h4 {
+  font-weight: 700;
+  font-size: 1.71vw;
+}
+.grid h5 {
+  font-size: 1.29vw;
+}
+.grid h6 {
+  font-size: 1vw;
+}
+.grid__right {
+  margin-left: 4.29vw;
+}
+.grid .period {
+  margin-top: 0.36vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+  font-style: italic;
+  font-size: 1vw;
+}
+.grid .description {
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+.grid .description p {
+  padding-left: 1.07vw;
+  margin-top: 0.29vw;
+  position: relative;
+}
+.grid .description p::before {
+  content: "";
+  position: absolute;
+  top: 0.43vw;
+  left: 0;
+  width: 0.29vw;
+  height: 0.29vw;
+  border: 0.07vw solid #721d37;
+  border-radius: 50%;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+}
+.social__link:not(:first-child) {
+  margin-top: 1.07vw;
+}
+.social__link img {
+  width: 2vw;
+  height: 2vw;
+}
+.social__link span {
+  font-size: 1.14vw;
+  display: inline-block;
+  margin-left: 0.36vw;
+}
+
+.skills {
+  margin-top: 4.29vw;
+  margin-left: -0.71vw;
+}
+.skills h3 {
+  margin-left: 0.71vw;
+}
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.2vw;
+}
+.skills span {
+  display: inline-block;
+  background-color: #b88e9b;
+  border-radius: 0.43vw;
+  padding: 0.36vw 0.71vw;
+  font-size: 1.14vw;
+  color: #ffffff;
+  margin-top: 0.71vw;
+  margin-left: 0.71vw;
+}
+
+.languages {
+  margin-top: 4.29vw;
+}
+.languages .language {
+  line-height: 0;
+  margin-top: 1vw;
+}
+.languages .language > span {
+  font-size: 1.14vw;
+}
+.languages .language__points {
+  margin-top: 0.6vw;
+  margin-left: -0.71vw;
+  line-height: 0;
+  display: flex;
+}
+.languages .language__points span {
+  display: inline-block;
+  width: 1.43vw;
+  height: 1.43vw;
+  border: 0.07vw solid #721d37;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
+.languages .rus .language__points span {
+  background-color: #721d37;
+}
+.languages .eng .language__points span:nth-child(-n+3) {
+  background-color: #721d37;
+}
+
+.experience__item {
+  padding-left: 2.14vw;
+}
+.experience__item:last-child h4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.14vw;
+  height: 50%;
+  background-color: #721d37;
+}
+
+.education {
+  margin-top: 3.57vw;
+}
+.education__item {
+  padding-left: 2.14vw;
+}
+.education__item:last-child h4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.14vw;
+  height: 50%;
+  background-color: #721d37;
+}
+
+.experience h4, .education h4 {
+  margin-left: -2.14vw;
+  padding-left: 2.14vw;
+  position: relative;
+}
+.experience h4::before, .education h4::before {
+  content: "";
+  width: 1.29vw;
+  height: 0.14vw;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #721d37;
+  transform: translate(0, -50%);
+}
+.experience p, .education p {
+  font-size: 0.86vw;
+}/*# sourceMappingURL=style.css.map */
