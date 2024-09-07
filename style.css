@@ -87,11 +87,17 @@ a {
   font-size: 2.86vw;
   border-bottom: 0.14vw solid #ffffff;
 }
-.header__inner .header__description {
+.header__description {
   margin-top: 1.43vw;
   font-size: 1vw;
   letter-spacing: 0;
   text-align: justify;
+}
+.header__photo {
+  
+}
+.header__name {
+  
 }
 
 .grid {
